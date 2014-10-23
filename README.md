@@ -1,21 +1,21 @@
 # OpenOfficeJSONExporter 
 
-A macro script writen in JavaScript that export spreadsheets into JSON format!
+A macro script written in JavaScript that export spreadsheets into JSON format!
 
 There are two scripts:
 - ToArrayOfObject
 - ToObjectOfObject
 
-////////////////////////////////////////
-Example:
+### Example:
+<pre>
 ___________________________
 |__id__|__name__|_surname_|
 |_a123_|_Plus___|_Pingya__|
 |_b456_|_Tony___|_Stark___|
+</pre>
 
-////////////////////////////////////////
 Run ToArrayOfObject will get:
-
+<pre>
 [
   {
     "id": "a123",
@@ -28,9 +28,10 @@ Run ToArrayOfObject will get:
     "surname": "Stark"
   }
 ]
+</prev>
 
-///////////////////////////////////////
-Run ToOjectOfObject will get:
+Run ToObjectOfObject will get:
+<pre>
 {
   "a123": {
     "name": "Plus",
@@ -41,5 +42,5 @@ Run ToOjectOfObject will get:
     "surname": "Stark"
   }
 }
-
+</pre>
 Good Luck!
